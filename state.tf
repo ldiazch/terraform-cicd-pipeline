@@ -1,7 +1,7 @@
 terraform{
     backend "s3" {
-        bucket = "davoclock-aws-cicd-pipeline"
-        encrypt = true
+        bucket = "sre-cicd-pipeline"
+        encrypt = false
         key = "terraform.tfstate"
         region = "us-east-1"
     }
